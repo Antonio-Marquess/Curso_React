@@ -3,6 +3,15 @@ const Events = () => {
         console.log(e)
         console.log("Ativou o evento!")
     }
+    const handleSomething = (x) => {
+        if (x) {
+            return <h1>Renderizando isso!</h1>
+        } else {
+            return <h1>Também posso renderizando isso!</h1>
+        }
+    }
+
+
 
     return (
         <div>
@@ -11,8 +20,12 @@ const Events = () => {
             </div>
             <div>
                 <button onClick={()=> console.log("Clicou!!!")}>
-                    Clique aqui também!</button>
+                    Clique aqui também!
+                </button>
+                
             </div>
+            {handleSomething(true)}
+            {handleSomething(false)}
         </div>
     )
 
