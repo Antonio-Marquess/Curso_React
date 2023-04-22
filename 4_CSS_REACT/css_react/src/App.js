@@ -9,6 +9,10 @@ function App() {
         {/*CSS de componente*/}
         <MyComponent />
         <p>Parágrafo do App.js</p>
+        {/*CSS inline*/}   
+        <p style={{color: 'red', padding: '25px', borderTop: '2px solid red'}}>
+            Parágrafo do App.js com CSS inline
+        </p>
     </div>
   );
 }
