@@ -5,6 +5,7 @@ import { useState } from 'react';
 function App() {
   const n = 15
   const [name] = useState("Antonio")
+  const redTitle = true
 
   return (
     <div className="App">
@@ -27,9 +28,11 @@ function App() {
           }
           >
               CSS Dinâmico, teste nome
-          </h2>
-             
-
+          </h2> 
+        {/*CSS Classe dinâmico*/}
+        <h2 className={redTitle? "red-title" : "title" }>
+            Este título vai ter classe dinâmico
+            </h2>
     </div>
   );
 }
